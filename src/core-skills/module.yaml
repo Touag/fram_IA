@@ -1,0 +1,26 @@
+code: core
+name: "Sedona Core Module"
+description: "Core configuration and shared resources"
+
+header: "Sedona Core Configuration"
+subheader: "Configure the core settings for your Sedona installation.\nThese settings will be used across all installed sedona skills, workflows, and agents."
+
+user_name:
+  prompt: "What should agents call you? (Use your name or a team name)"
+  default: "Sedona"
+  result: "{value}"
+
+communication_language:
+  prompt: "What language should agents use when chatting with you?"
+  default: "English"
+  result: "{value}"
+
+document_output_language:
+  prompt: "Preferred document output language?"
+  default: "English"
+  result: "{value}"
+
+output_folder:
+  prompt: "Where should output files be saved?"
+  default: "_sedona-output"
+  result: "{project-root}/{value}"

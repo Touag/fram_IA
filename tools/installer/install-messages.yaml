@@ -1,0 +1,20 @@
+# SEDONA Installer Messages
+# These messages are displayed during installation
+# Edit this file to change what users see during the install process
+
+# Display at the START of installation (after logo, before prompts)
+startMessage: |
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  AI Companion Framework for Enterprise.
+  Intégrez des agents intelligents dans vos process métier et vos pipelines CI/CD.
+
+  🌟 100% open source. Toujours.
+
+  🌐 RETROUVEZ-NOUS :
+    GitHub:    https://github.com/Touag/fram_IA
+
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# No end message - install summary and next steps are rendered by the installer
+endMessage: ""

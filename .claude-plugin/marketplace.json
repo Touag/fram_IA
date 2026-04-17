@@ -1,0 +1,74 @@
+{
+  "name": "sedona",
+  "owner": {
+    "name": "Brian (Sedona) Madison"
+  },
+  "description": "Breakthrough Method of Agile AI-driven Development — a full-lifecycle framework with agents and workflows for analysis, planning, architecture, and implementation.",
+  "license": "MIT",
+  "homepage": "https://github.com/sedona-code-org/SEDONA",
+  "repository": "https://github.com/sedona-code-org/SEDONA",
+  "keywords": ["sedona", "agile", "ai", "orchestrator", "development", "methodology", "agents"],
+  "plugins": [
+    {
+      "name": "sedona-pro-skills",
+      "source": "./",
+      "description": "Next level skills for power users — advanced prompting techniques, agent management, and more.",
+      "version": "6.3.0",
+      "author": {
+        "name": "Brian (Sedona) Madison"
+      },
+      "skills": [
+        "./src/core-skills/sedona-help",
+        "./src/core-skills/sedona-brainstorming",
+        "./src/core-skills/sedona-distillator",
+        "./src/core-skills/sedona-party-mode",
+        "./src/core-skills/sedona-shard-doc",
+        "./src/core-skills/sedona-advanced-elicitation",
+        "./src/core-skills/sedona-editorial-review-prose",
+        "./src/core-skills/sedona-editorial-review-structure",
+        "./src/core-skills/sedona-index-docs",
+        "./src/core-skills/sedona-review-adversarial-general",
+        "./src/core-skills/sedona-review-edge-case-hunter"
+      ]
+    },
+    {
+      "name": "sedona-lifecycle",
+      "source": "./",
+      "description": "Full-lifecycle AI development framework — agents and workflows for product analysis, planning, architecture, and implementation.",
+      "version": "6.3.0",
+      "author": {
+        "name": "Brian (Sedona) Madison"
+      },
+      "skills": [
+        "./src/bmm-skills/1-analysis/sedona-product-brief",
+        "./src/bmm-skills/1-analysis/sedona-agent-analyst",
+        "./src/bmm-skills/1-analysis/sedona-agent-tech-writer",
+        "./src/bmm-skills/1-analysis/sedona-document-project",
+        "./src/bmm-skills/1-analysis/research/sedona-domain-research",
+        "./src/bmm-skills/1-analysis/research/sedona-market-research",
+        "./src/bmm-skills/1-analysis/research/sedona-technical-research",
+        "./src/bmm-skills/2-plan-workflows/sedona-agent-pm",
+        "./src/bmm-skills/2-plan-workflows/sedona-agent-ux-designer",
+        "./src/bmm-skills/2-plan-workflows/sedona-create-prd",
+        "./src/bmm-skills/2-plan-workflows/sedona-edit-prd",
+        "./src/bmm-skills/2-plan-workflows/sedona-validate-prd",
+        "./src/bmm-skills/2-plan-workflows/sedona-create-ux-design",
+        "./src/bmm-skills/3-solutioning/sedona-agent-architect",
+        "./src/bmm-skills/3-solutioning/sedona-create-architecture",
+        "./src/bmm-skills/3-solutioning/sedona-check-implementation-readiness",
+        "./src/bmm-skills/3-solutioning/sedona-create-epics-and-stories",
+        "./src/bmm-skills/3-solutioning/sedona-generate-project-context",
+        "./src/bmm-skills/4-implementation/sedona-agent-dev",
+        "./src/bmm-skills/4-implementation/sedona-dev-story",
+        "./src/bmm-skills/4-implementation/sedona-quick-dev",
+        "./src/bmm-skills/4-implementation/sedona-sprint-planning",
+        "./src/bmm-skills/4-implementation/sedona-sprint-status",
+        "./src/bmm-skills/4-implementation/sedona-code-review",
+        "./src/bmm-skills/4-implementation/sedona-create-story",
+        "./src/bmm-skills/4-implementation/sedona-correct-course",
+        "./src/bmm-skills/4-implementation/sedona-retrospective",
+        "./src/bmm-skills/4-implementation/sedona-qa-generate-e2e-tests"
+      ]
+    }
+  ]
+}

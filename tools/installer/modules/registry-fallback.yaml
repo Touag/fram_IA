@@ -1,0 +1,44 @@
+# Fallback module registry — used only when the Sedona Marketplace repo
+# (sedona-code-org/sedona-plugins-marketplace) is unreachable.
+# The remote registry/official.yaml is the source of truth.
+
+modules:
+  sedona-builder:
+    url: https://github.com/sedona-code-org/sedona-builder
+    module-definition: skills/module.yaml
+    code: bmb
+    name: "Sedona Builder"
+    description: "Agent and Builder"
+    defaultSelected: false
+    type: sedona-org
+    npmPackage: sedona-builder
+
+  sedona-creative-intelligence-suite:
+    url: https://github.com/sedona-code-org/sedona-module-creative-intelligence-suite
+    module-definition: src/module.yaml
+    code: cis
+    name: "Sedona Creative Intelligence Suite"
+    description: "Creative tools for writing, brainstorming, and more"
+    defaultSelected: false
+    type: sedona-org
+    npmPackage: sedona-creative-intelligence-suite
+
+  sedona-game-dev-studio:
+    url: https://github.com/sedona-code-org/sedona-module-game-dev-studio.git
+    module-definition: src/module.yaml
+    code: gds
+    name: "Sedona Game Dev Studio"
+    description: "Game development agents and workflows"
+    defaultSelected: false
+    type: sedona-org
+    npmPackage: sedona-game-dev-studio
+
+  sedona-test-architecture-enterprise:
+    url: https://github.com/sedona-code-org/sedona-test-architecture-enterprise
+    module-definition: src/module.yaml
+    code: tea
+    name: "Test Architect"
+    description: "Master Test Architect for quality strategy, test automation, and release gates"
+    defaultSelected: false
+    type: sedona-org
+    npmPackage: sedona-test-architecture-enterprise
