@@ -154,10 +154,22 @@ Avant de lancer le premier workflow, demander comment l'utilisateur veut gérer 
 
 Handle each option:
 
-**[A] Jira** — Save `pm_mode: jira` in project-setup.md. Add note:
+**[A] Jira** — Save `pm_mode: jira` in project-setup.md. Then immediately show this checklist:
+
 ```
-Config Jira à faire lors du premier `sedona-jira-sync`.
-Rappel : utilise un projet Jira dédié à ce projet pour éviter de polluer ton espace global.
+**🚀 Lysandre:** Parfait — Jira sync activé. Prépare ces 3 choses avant qu'on arrive à l'étape epics & stories :
+
+☐ 1. Crée un projet Jira dédié à **{project_name}** sur https://touag.atlassian.net
+     ⚠️  Ne réutilise PAS un projet existant — le sync va y créer des tickets en masse.
+
+☐ 2. Génère ton API token ici : https://id.atlassian.com/manage-profile/security/api-tokens
+     → Nomme-le "sedona-{project_name}"
+     → Copie-le quelque part — il ne sera visible qu'une fois.
+
+☐ 3. Note la clé de ton projet Jira (ex: SCRUM, PAIN, TEST...)
+     → C'est le préfixe de tes tickets.
+
+Quand tu arrives à `sedona-jira-sync`, Raphaël te demandera ces infos. C'est tout.
 ```
 
 **[B] Export** — Save `pm_mode: export` in project-setup.md. Add note:
