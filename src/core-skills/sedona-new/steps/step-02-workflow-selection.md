@@ -125,12 +125,56 @@ Append the workflow plan to `{project_setup_output_file}`:
 {ordered list of selected workflows with skill names}
 ```
 
-### 4. Launch First Workflow
+### 4. Choose Project Management Mode
+
+Avant de lancer le premier workflow, demander comment l'utilisateur veut gérer ses tickets :
+
+```
+**🚀 Lysandre:** Dernière question — comment tu veux gérer tes epics & stories une fois générés ?
+
+─────────────────────────────────────────────
+**[A] 🔗 Sync Jira**
+  Sedona pousse automatiquement les epics & stories dans ton projet Jira via l'API.
+  → Tu auras besoin d'un compte Atlassian et d'un API token.
+  → Génère ton token ici : https://id.atlassian.com/manage-profile/security/api-tokens
+  ⚠️  Connecte-toi sur un projet Jira dédié à ce projet — pas ton espace global.
+
+**[B] 📤 Export Sedona**
+  Sedona génère un fichier d'export structuré (CSV ou JSON) que tu peux importer
+  manuellement dans Jira, Linear, Notion ou tout autre outil.
+  → Zéro config, zéro API — juste un fichier prêt à importer.
+
+**[C] 📋 Workflow classique**
+  On reste dans Sedona. Les epics & stories restent dans des fichiers Markdown locaux.
+  Les agents dev s'en servent directement pour implémenter.
+─────────────────────────────────────────────
+```
+
+**HALT — wait for user selection.**
+
+Handle each option:
+
+**[A] Jira** — Save `pm_mode: jira` in project-setup.md. Add note:
+```
+Config Jira à faire lors du premier `sedona-jira-sync`.
+Rappel : utilise un projet Jira dédié à ce projet pour éviter de polluer ton espace global.
+```
+
+**[B] Export** — Save `pm_mode: export` in project-setup.md. Add note:
+```
+Un fichier d'export sera généré après `sedona-create-epics-and-stories`.
+Formats disponibles : CSV (Jira import), JSON (Linear/Notion), Markdown.
+```
+
+**[C] Classic** — Save `pm_mode: classic` in project-setup.md.
+
+### 5. Launch First Workflow
 
 ```
 **🚀 Lysandre:** Projet **{project_name}** initialisé. ✓
 
 Ton parcours est enregistré dans `docs/sedona/planning-artifacts/project-setup.md`.
+Mode de gestion : {pm_mode}
 
 **Prochaine étape recommandée :**
 ▶ `{first_skill_in_sequence}` — {description}

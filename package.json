@@ -110,5 +110,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "overrides": {
+    "defu": "6.1.4"
   }
 }
